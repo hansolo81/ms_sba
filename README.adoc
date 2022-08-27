@@ -11,8 +11,14 @@
 Runs on docker
 
 == Basic installation instructions
+replace EUREKA_IP and EUREKA_PORT with the actual values
+....
+$ docker build -t ms_sba
 
-run docker run
+$ docker run -d -p 8082:8082 \
+    -e EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://${EUREKA_IP}:${EUREKA_PORT}/eureka  \
+    ms_sba:latest
+....
 
 == Basic usage instructions
 
