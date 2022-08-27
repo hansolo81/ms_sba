@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ms_sba
+  security.user:
+    name: "sba"
+    password: "s3cret"
+  boot:
+    admin:
+      client:
+        instance.metadata.user:
+          name: ${spring.security.user.name}
+          password: ${spring.security.user.password}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+
