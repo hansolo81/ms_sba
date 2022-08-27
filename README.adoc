@@ -1,1 +1,25 @@
-# ms_sba
+== M2U Spring Boot Admin
+
+== Overview
+
+* Spring Boot Admin for m2u microservices
+* Helps HD and AM to monitor and be alerted if any service is misbehaving
+* For more info, see https://github.com/codecentric/spring-boot-admin
+
+== Operating systems
+
+Runs on docker
+
+== Basic installation instructions
+
+run docker run
+
+== Basic usage instructions
+
+* Go to http://{SERVER_IP}:8082
+* Username: sba
+* Password: s3cret
+
+== Author(s)
+
+Mohamed Zaki zakiyunus@gmail.com
