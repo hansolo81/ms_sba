@@ -7,12 +7,6 @@ spring:
   security.user:
     name: "sba"
     password: "s3cret"
-  boot:
-    admin:
-      client:
-        instance.metadata.user:
-          name: ${spring.security.user.name}
-          password: ${spring.security.user.password}
 
 eureka:
   client:
